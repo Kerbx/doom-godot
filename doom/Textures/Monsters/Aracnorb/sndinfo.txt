@@ -1,0 +1,4 @@
+aracnorb/sight		dsaracst
+aracnorb/death		dsaracdt
+aracnorb/attack		dsaracfr
+aracnorb/melee		dsaracml

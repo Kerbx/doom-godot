@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsanhoof.ogg-23a571196dfeba1e981625123476f405.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Annihilator/sounds/dsanhoof.ogg"
+dest_files=[ "res://.import/dsanhoof.ogg-23a571196dfeba1e981625123476f405.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

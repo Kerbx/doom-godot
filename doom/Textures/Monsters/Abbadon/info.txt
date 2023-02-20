@@ -1,0 +1,10 @@
+Name: Abaddon
+Difficulty: Medium
+Connections: None
+Summon: Abaddon
+Melee: Yes
+Distance: Projectile
+Type: Demon
+Brightmaps: No
+Actor modification: No
+ACS: No

@@ -1,0 +1,7 @@
+Submitted: WhoDaMan
+Decorate: WhoDaMan
+GLDefs: Sandypaper (Brightmaps)
+Sounds: Id Software
+Sprites: Id Software 
+Sprite Edit: WhoDaMan
+Idea Base: Doom Arachnotron and Baron of Hell

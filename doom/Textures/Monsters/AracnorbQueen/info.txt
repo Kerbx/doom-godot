@@ -1,0 +1,14 @@
+Name: Aracnorb Queen
+Difficulty: Hard
+Connection: Thamuz (BFG Projectile), Electro Gun
+Summon: AracnorbQueen
+Melee: Yes
+Distance: Projectile
+Type: Alien
+Brightmaps: No
+Added States: No
+ACS: No
+
+
+The mother of all the Aracnorbs. The Queen can project multiple forms of plasma attack, including a
+stream, scatter shot, or a powerful homing shot.

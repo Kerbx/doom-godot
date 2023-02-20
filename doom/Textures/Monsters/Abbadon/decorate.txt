@@ -1,0 +1,108 @@
+Actor Abaddon
+{
+Monster
+Health 1200
+Radius 36
+Height 60
+Mass 2000
+Speed 12
+PainChance 40
+Scale 1.1
+MeleeRange 56
+SeeSound "Abaddon/Sight"
+ActiveSound "Abaddon/Active"
+PainSound "Abaddon/Pain"
+DeathSound "Abaddon/Death"
+Obituary "%o was smitten by an Abaddon."
+HitObituary "%o became food for an Abaddon."
++FLOAT
++NOGRAVITY
+States
+	{
+	Spawn:
+		HED3 A 10 A_Look
+		Loop
+	See:
+		HED3 A 3 A_Chase
+		Loop
+	Pain:
+		HED3 E 2
+		HED3 E 2 A_Pain
+		HED3 F 4
+		Goto See
+	Missile:
+		TNT1 A 0 A_Jump(130,7,13)
+		HED3 BC 5 A_FaceTarget
+		HED3 D 5 Bright A_BasicAttack(8,"none","AbaddonBall",28)
+		HED3 BC 5 A_FaceTarget
+		HED3 D 5 Bright A_BasicAttack(8,"none","AbaddonBall",28)
+		Goto See
+		HED3 BC 5 A_FaceTarget
+		HED3 D 1 Bright A_CustomMissile("AbaddonBallSmall",28,3,8)
+		HED3 D 1 Bright A_CustomMissile("AbaddonBallSmall",28,0,0)
+		HED3 D 3 Bright A_CustomMissile("AbaddonBallSmall",28,-3,-8)
+		TNT1 A 0 A_Jump(80,7)
+		Goto See
+		HED3 BC 5 A_FaceTarget
+		HED3 D 1 Bright A_CustomMissile("AbaddonBallSmall",28,-3,-8)
+		HED3 D 1 Bright A_CustomMissile("AbaddonBallSmall",28,0,0)
+		HED3 D 3 Bright A_CustomMissile("AbaddonBallSmall",28,3,8)
+		TNT1 A 0 A_Jump(80,1)
+		Goto See
+		HED3 BC 5 A_FaceTarget
+		HED3 D 5 Bright A_BasicAttack(8,"none","AbaddonBall",28)
+		Goto See
+	Death:
+		HED3 G 6 A_NoBlocking
+		HED3 H 6 A_Scream
+		HED3 IJKLMN 6
+		HED3 O -1 A_SetFloorClip
+		Stop
+	Raise:
+		HED3 O 6 A_UnSetFloorClip
+		HED3 NMLKJIHG 6
+		Goto See
+	}
+}
+
+Actor AbaddonBall
+{
+Projectile
+Radius 6
+Height 8
+Speed 20
+FastSpeed 30
+Damage 10
+RenderStyle Add
+Decal Cacoscorch
+SeeSound "caco/attack"
+DeathSound "caco/shotx"
++RANDOMIZE
+States
+	{
+	Spawn:
+		BAL3 AB 4 BRIGHT
+		Loop
+	Death:
+		BAL3 CDE 6 BRIGHT
+		Stop
+	}
+}
+
+Actor AbaddonBallSmall : CacodemonBall
+{
+Radius 4
+Height 6
+Speed 16
+FastSpeed 24
+Decal HImpScorch
+States
+	{
+	Spawn:
+		BAL3 FGH 4 Bright
+		Loop
+	Death:
+		BAL3 IJKLM 4 Bright
+		Stop
+	}
+}

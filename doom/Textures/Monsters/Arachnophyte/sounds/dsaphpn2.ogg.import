@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsaphpn2.ogg-c2d0d1c50c3d3f75bda7b13693df01d9.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Arachnophyte/sounds/dsaphpn2.ogg"
+dest_files=[ "res://.import/dsaphpn2.ogg-c2d0d1c50c3d3f75bda7b13693df01d9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,6 @@
+Decorate: Jimmy, Zdude (minor edits)
+Sounds: None added, uses stock Doom sounds
+GLDefs: Sandypaper (Brightmaps)
+Sprites: id Software
+Sprite Edit: Jimmy
+Idea Base: Upgraded version of the Arachnotron

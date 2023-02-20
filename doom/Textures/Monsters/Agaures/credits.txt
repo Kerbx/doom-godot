@@ -1,0 +1,6 @@
+Decorate: Dreadopp
+GLDEFs: Dreadopp, Sandypaper (Brightmaps)
+Sounds: Id Software, Midway, Blizzard Entertainment, Eriance
+Sprites: Id Software, Eriance
+Sprite Edit: Dreadopp
+Idea Base: Eriance's Vulgar and Devil

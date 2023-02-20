@@ -1,0 +1,57 @@
+ACTOR BlindPinky 9940
+{
+	Health 200
+	Radius 30
+	Height 56
+	Speed 5
+	PainChance 100
+	Mass 400
+	+FLOORCLIP
+	Monster
+	SeeSound "BPinky/Sight"
+	DeathSound "BPinky/Death"
+	ActiveSound "Barks"
+	PainSound "BPinky/Pain"
+	Obituary "%o was too loud."
+	States
+	{
+		Spawn:
+			BPWA A 4 A_LookEx(0,0,100)
+			BPWA AAA 4 A_Wander
+			BPWA B 4 A_LookEx(0,0,100)
+			BPWA BBB 4 A_Wander
+			BPWA C 4 A_LookEx(0,0,100)
+			BPWA CCC 4 A_Wander
+			BPWA D 4 A_LookEx(0,0,100)
+			BPWA DDD 4 A_Wander
+			TNT1 A 0 A_Jump(14, "Grumble")
+			loop
+		See:
+			TNT1 A 0 A_SetSpeed(15)
+			BPWA AABBCCDD 2 A_Chase
+			BPWA AABBCCDD 2 A_Chase
+			BPWA AABBCCDD 2 A_Chase
+			TNT1 A 0 A_Jump(64, "See", "EndChase")
+			loop
+		Melee:
+			TNT1 A 0 A_PlaySound("BPinky/Bite")
+			BPBI AB 6 A_FaceTarget
+			BPBI C 6 A_CustomMeleeAttack(random(3, 9) * 5, "", "Melee", true)
+			Goto See
+		EndChase:
+			TNT1 A 0 A_SetSpeed(5)
+			BPWA A 1 A_ClearTarget
+			Goto Spawn
+		Grumble:
+			TNT1 A 0 A_PlaySound("BPinky/Idle")
+			Goto Spawn
+		Pain:
+			BPPA A 2 A_Pain
+			Goto See
+		Death:
+			TNT1 A 0 A_PlaySound("BPinky/Death")
+			BPDE ABCDEF 6
+			BPDE F -1
+			Stop
+	}
+}

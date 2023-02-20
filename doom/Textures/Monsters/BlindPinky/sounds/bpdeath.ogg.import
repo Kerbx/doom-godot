@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bpdeath.ogg-fa0505f2a01bfa6d7371b799be62b3f9.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/BlindPinky/sounds/bpdeath.ogg"
+dest_files=[ "res://.import/bpdeath.ogg-fa0505f2a01bfa6d7371b799be62b3f9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

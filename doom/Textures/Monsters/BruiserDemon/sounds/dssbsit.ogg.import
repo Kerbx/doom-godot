@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dssbsit.ogg-582963c2dd62b88bacd4b19fcf84ed7f.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/BruiserDemon/sounds/dssbsit.ogg"
+dest_files=[ "res://.import/dssbsit.ogg-582963c2dd62b88bacd4b19fcf84ed7f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

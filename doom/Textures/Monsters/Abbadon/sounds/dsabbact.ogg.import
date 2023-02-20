@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsabbact.ogg-f83225a2339397449e130f2b103cdf22.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Abbadon/sounds/dsabbact.ogg"
+dest_files=[ "res://.import/dsabbact.ogg-f83225a2339397449e130f2b103cdf22.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,8 @@
+Name: Beam Revenant
+Difficulty: Medium
+Connection: Uses the standard Doom explosion sprites in its attack.
+Summon: BeamRevenant
+Melee: Yes
+Distance: Fast Projectile
+Type: Undead, Cybernetic
+Brightmaps: No

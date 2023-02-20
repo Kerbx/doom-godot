@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsasgout.ogg-878aba13092913039bb97cd1d234174a.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/AutoShotgunGuy/sounds/dsasgout.ogg"
+dest_files=[ "res://.import/dsasgout.ogg-878aba13092913039bb97cd1d234174a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

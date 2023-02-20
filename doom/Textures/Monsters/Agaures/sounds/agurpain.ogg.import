@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/agurpain.ogg-437541ab1a29a9f271fd009b4d1ec42b.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Agaures/sounds/agurpain.ogg"
+dest_files=[ "res://.import/agurpain.ogg-437541ab1a29a9f271fd009b4d1ec42b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

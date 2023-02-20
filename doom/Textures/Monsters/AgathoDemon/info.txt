@@ -1,0 +1,14 @@
+Name: Agathodemon
+Difficulty: Medium
+Connections: None
+Summon: Agathodemon, AnotherAgathodemon
+Melee: Yes
+Distance: Projectile, Tracer
+Type: Demon
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+
+A somewhat beefy monster with a fast projectile attack, and can also spit a pair of aggressively-
+homing projectiles. Occasionally, it also can become mostly transparent for a short while.

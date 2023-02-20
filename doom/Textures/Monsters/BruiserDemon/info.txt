@@ -1,0 +1,19 @@
+Name: Bruiser Demon
+Difficulty: Hard
+Connection: None
+Summon: BruiserDemon
+Melee: Yes
+Distance: Projectile
+Type: Demon
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+
+Works very well as an early mini-boss or a meaty, damaging monster. It has a few, varied projectile
+attacks, and an attack that sends floor-hugging explosions in a wave ahead of it. Also has a large
+amount of health.
+
+
+May God have mercy on whoever tries to update this thing's GLDefs...
+           -Ghastly

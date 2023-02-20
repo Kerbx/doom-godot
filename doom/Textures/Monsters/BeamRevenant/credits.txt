@@ -1,0 +1,5 @@
+Decorate: Captain Ventris
+GLDEFs: Captain Ventris
+Sounds: Id Software
+Sprite Edit: Spectator
+Idea Base: ZDoom Wars required sprites to allow players to tell Rail and Normal Revenants apart.

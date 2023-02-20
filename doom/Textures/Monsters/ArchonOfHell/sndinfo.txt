@@ -1,0 +1,6 @@
+monster/ar2sit dsar2sit
+
+monster/ar2dth dsar2dth
+
+weapons/firbfi dsfirbfi
+weapons/hellex dshellex

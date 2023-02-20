@@ -1,0 +1,19 @@
+pointlight Rail
+{
+    color 1.0 0.7 0.0
+    size 24
+}
+
+object railtrail
+{
+    frame MISLB { light Rail }
+    frame MISLC { light Rail }
+    frame MISLD { light Rail }
+}
+
+object railpow
+{
+    frame MISLB { light Rail }
+    frame MISLC { light Rail }
+    frame MISLD { light Rail }
+}

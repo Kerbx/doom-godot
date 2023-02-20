@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pzapsee.ogg-530fa0fb5037b67ea97c83b6cc46875c.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/AracnorbQueen/sounds/pzapsee.ogg"
+dest_files=[ "res://.import/pzapsee.ogg-530fa0fb5037b67ea97c83b6cc46875c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bpbark.ogg-067520f6429b9128dc7181cd66e66488.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/BlindPinky/sounds/bpbark.ogg"
+dest_files=[ "res://.import/bpbark.ogg-067520f6429b9128dc7181cd66e66488.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

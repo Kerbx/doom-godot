@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dshrlexp.ogg-99340122f4145e7046bd7538d4a407df.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Annihilator/sounds/dshrlexp.ogg"
+dest_files=[ "res://.import/dshrlexp.ogg-99340122f4145e7046bd7538d4a407df.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,6 @@
+Abaddon/Sight DSABBSGH
+Abaddon/Active DSABBACT
+$random Abaddon/Pain { DSABBOW1 DSABBOW2 }
+DSABBOW1 DSABBOW1
+DSABBOW2 DSABBOW2
+Abaddon/Death DSABBDTH

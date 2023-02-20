@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fritcmht.ogg-a61a6981eec89e46558db096cb7621e6.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Afrit/sounds/fritcmht.ogg"
+dest_files=[ "res://.import/fritcmht.ogg-a61a6981eec89e46558db096cb7621e6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

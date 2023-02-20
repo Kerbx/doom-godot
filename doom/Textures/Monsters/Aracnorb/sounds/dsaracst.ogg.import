@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dsaracst.ogg-6427618a6a9d58fa154fb8a6c63e22d0.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Aracnorb/sounds/dsaracst.ogg"
+dest_files=[ "res://.import/dsaracst.ogg-6427618a6a9d58fa154fb8a6c63e22d0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

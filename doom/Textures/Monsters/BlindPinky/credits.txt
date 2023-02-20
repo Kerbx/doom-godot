@@ -1,0 +1,4 @@
+Code: DoomedArchvileDemon
+Sounds: Doom 64
+Sprites: HorrorMovieGuy
+Idea Base: Enemy that reacts to sound

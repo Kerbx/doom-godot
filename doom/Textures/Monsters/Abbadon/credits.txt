@@ -1,0 +1,8 @@
+Code: Skulltag, Gothic
+GLDefs: Skulltag, Gothic
+Sounds: id Software (Doom 3)
+Sprites: Skulltag, 3DRealms (Octobrain bits), Midway (D64 Cacodemon bits), David G, Vader
+Sprite Edit: Gothic
+Idea Base: Skulltag's Abaddon
+
+At last, the whole Skulltag family is here. The Abaddon is a more powerful and faster variant of the cacodemon, it fires 2 fast red gas balls, or 3 smaller projectiles in a row, and sometimes making combo attacks.

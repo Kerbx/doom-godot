@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/agatstlh.ogg-4c48b6f8bd1be8040ffb0307c287496f.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/AgathoDemon/sounds/agatstlh.ogg"
+dest_files=[ "res://.import/agatstlh.ogg-4c48b6f8bd1be8040ffb0307c287496f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

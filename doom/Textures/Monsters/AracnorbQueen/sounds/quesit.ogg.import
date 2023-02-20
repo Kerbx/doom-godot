@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/quesit.ogg-7c027458890af52bb8e0e542524dabe9.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/AracnorbQueen/sounds/quesit.ogg"
+dest_files=[ "res://.import/quesit.ogg-7c027458890af52bb8e0e542524dabe9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

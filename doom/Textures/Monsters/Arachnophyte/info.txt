@@ -1,0 +1,14 @@
+Name: Arachnophyte
+Difficulty: Medium
+Connection: None
+Summon: Arachnophyte
+Melee: No
+Distance: Hitscan
+Type: Demon, Cybernetic
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+
+A flying, weaker version of the Spider Mastermind. Does as much damage and is more mobile, but has
+less health.

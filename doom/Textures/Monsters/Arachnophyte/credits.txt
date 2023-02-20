@@ -1,0 +1,5 @@
+Code: Xaser, Quasar, Ghastly (ZScript conversion)
+GLDefs: Dreadopp
+Sounds: Id Software
+Sprites: Id Software
+Sprite Edit: Xaser, Quasar

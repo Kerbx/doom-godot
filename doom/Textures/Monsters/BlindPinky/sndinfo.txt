@@ -1,0 +1,9 @@
+BPinky/Death BPDEATH
+BPinky/Pain BPPAIN
+BPinky/Bite BPBITE
+BPinky/Sight BPSEE
+BPinky/Idle BPGRUMBL
+
+$random Barks { BPBark BPBark2 }
+BPBark	BPBark
+BPBark2 BPBark2

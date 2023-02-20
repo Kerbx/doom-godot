@@ -1,0 +1,80 @@
+Flickerlight ABADBALL
+{
+	color 1.0 0.3 0.0
+	size 56
+	secondarySize 64
+	chance 0.5
+}
+Flickerlight ABADBALL_X1
+{
+	color 1.0 0.3 0.0
+	size 72
+	secondarySize 80
+	chance 0.25
+}
+Flickerlight ABADBALL_X2
+{
+	color 1.0 0.3 0.0
+	size 88
+	secondarySize 96
+	chance 0.25
+}
+Flickerlight ABADBALL_X3
+{
+	color 1.0 0.3 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+Object AbaddonBall
+{
+	Frame BAL3A { Light ABADBALL }
+	Frame BAL3B { Light ABADBALL }
+	Frame BAL3C { Light ABADBALL_X1 }
+	Frame BAL3D { Light ABADBALL_X2 }
+	Frame BAL3E { Light ABADBALL_X3 }
+}
+
+Flickerlight ABADBALL2
+{
+	Color 0.6 0.7 0.0
+	Size 32
+	SecondarySize 36
+	Chance 0.5
+}
+Pointlight ABADBALL2_X1
+{
+	Color 0.7 0.8 0.3
+	Size 40
+}
+Pointlight ABADBALL2_X2
+{
+	Color 0.6 0.7 0.2
+	Size 36
+}
+Pointlight ABADBALL2_X3
+{
+	Color 0.5 0.6 0.1
+	Size 32
+}
+Pointlight ABADBALL2_X4
+{
+	Color 0.4 0.5 0.0
+	Size 32
+}
+Pointlight ABADBALL2_X5
+{
+	Color 0.3 0.4 0.0
+	Size 32
+}
+Object AbaddonBallSmall
+{
+	Frame BAL3F { Light ABADBALL2 }
+	Frame BAL3G { Light ABADBALL2 }
+	Frame BAL3H { Light ABADBALL2 }
+	Frame BAL3I { Light ABADBALL2_X1 }
+	Frame BAL3J { Light ABADBALL2_X2 }
+	Frame BAL3K { Light ABADBALL2_X3 }
+	Frame BAL3L { Light ABADBALL2_X4 }
+	Frame BAL3M { Light ABADBALL2_X5 }
+}

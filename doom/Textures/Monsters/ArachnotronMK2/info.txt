@@ -1,0 +1,8 @@
+Name: Augmented Arachnotron
+Difficulty: Medium
+Connections: Uses the resources from the original Arachnotron (not included in wad)
+Summon: ArachnotronMK2
+Melee: None
+Distance: Projectile
+Type: Demon, Cybernetic
+Brightmaps: Yes

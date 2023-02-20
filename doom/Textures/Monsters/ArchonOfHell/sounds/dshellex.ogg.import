@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dshellex.ogg-f4b6032029137f7ed9b6b6f32ad1760e.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/ArchonOfHell/sounds/dshellex.ogg"
+dest_files=[ "res://.import/dshellex.ogg-f4b6032029137f7ed9b6b6f32ad1760e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

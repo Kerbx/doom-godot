@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/agurdth2.ogg-f90042a2b078b67d95bb71fee7e9a9fa.oggstr"
+
+[deps]
+
+source_file="res://Textures/Monsters/Agaures/sounds/agurdth2.ogg"
+dest_files=[ "res://.import/agurdth2.ogg-f90042a2b078b67d95bb71fee7e9a9fa.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

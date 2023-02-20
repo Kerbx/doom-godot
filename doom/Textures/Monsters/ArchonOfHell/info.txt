@@ -1,0 +1,15 @@
+Name: Archon of Hell
+Difficulty: Hard
+Connection: None
+Summon: ArchonOfHell
+Melee: Yes
+Distance: Projectile
+Type: Demon
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+
+A meaty mini-boss type similar in difficulty to the Bruiser Demon. It can throw varying spreads of
+fireballs, or a fast, heavily damaging comet. It can also take a large amount of punishment before
+finally succumbing.

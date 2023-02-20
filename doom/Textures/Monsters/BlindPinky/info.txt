@@ -1,0 +1,18 @@
+Name: Blind Pinky
+Difficulty: Medium
+Connections: None
+Summon: BlindPinky
+Melee: Yes
+Distance: No
+Type: Demon
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+
+This deformed pinky demon has adapted to living in areas of complete darkness. Unlike its cousin it
+has no eyes or horns. While this may seem like it would make for a less threatening creature, that's
+far from the truth. With lack of vision it has extremely good hearing and will use its superior
+speed to quickly attack its prey before they can escape. Additionally, it has sharper teeth which
+gives more ripping power. They wander around aimlessly but as long as you stay quite you should be
+safe... shh.
