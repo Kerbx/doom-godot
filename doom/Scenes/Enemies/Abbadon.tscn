@@ -48,7 +48,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="KinematicBody" type="KinematicBody" groups=["emeny"]]
+[node name="KinematicBody" type="KinematicBody" groups=["enemy"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.371836, 0 )
 script = ExtResource( 16 )
 
