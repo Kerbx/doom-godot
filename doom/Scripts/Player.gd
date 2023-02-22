@@ -27,12 +27,13 @@ func _physics_process(delta):
 		currentGun += 1
 		if currentGun > len(guns) - 1:
 			currentGun = 0
-			changeGun(currentGun)
+		changeGun(currentGun)
 	elif Input.is_action_just_released("nextGun"):
 		currentGun -= 1
+		print(currentGun)
 		if currentGun < 0:
 			currentGun = len(guns) - 1
-			changeGun(currentGun)
+		changeGun(currentGun)
 
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()

@@ -8,6 +8,7 @@ extents = Vector3( 1, 2, 1 )
 
 [node name="Player" type="KinematicBody" groups=["player"]]
 script = ExtResource( 1 )
+SPEED = 1498
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )

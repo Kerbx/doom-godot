@@ -6,9 +6,9 @@ onready var player = get_tree().get_nodes_in_group('player')[0]
 
 var path = []
 var pathIndex = 0
-var speed = 10
-var health = 10
-var move = true
+export var speed = 10
+export var health = 10
+export var move = true
 
 func _ready():
 	pass
@@ -22,7 +22,7 @@ func _physics_process(delta):
 		else:
 			if move:
 				$AnimatedSprite3D.play("walking")
-				move_and_slide(direction.normalized() * speed, Vector3.UP)
+				move_and_slide(direction.normalized() * speed * delta, Vector3.UP)
 
 	else:
 		findPath(player.global_transform.origin)
@@ -52,7 +52,7 @@ func death():
 		$AnimatedSprite3D.play("die")
 	else:
 		$AnimatedSprite3D.play('die')
-	
+
 	return
 
 func shoot(target):

@@ -51,6 +51,7 @@ animations = [ {
 [node name="Abbadon" type="KinematicBody" groups=["enemy"]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.371836, 0 )
 script = ExtResource( 16 )
+speed = 780
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 1 )
