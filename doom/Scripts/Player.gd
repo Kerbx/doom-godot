@@ -23,12 +23,12 @@ func _ready():
 func _physics_process(delta):
 	var direction = Vector3()
 
-	if Input.is_action_just_released("nextGun"):
+	if Input.is_action_just_released("prevGun"):
 		currentGun += 1
 		if currentGun > len(guns) - 1:
 			currentGun = 0
 			changeGun(currentGun)
-	elif Input.is_action_just_released("prevGun"):
+	elif Input.is_action_just_released("nextGun"):
 		currentGun -= 1
 		if currentGun < 0:
 			currentGun = len(guns) - 1

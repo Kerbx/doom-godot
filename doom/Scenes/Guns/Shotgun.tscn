@@ -49,7 +49,7 @@ rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "shoot"
-frame = 1
+frame = 5
 playing = true
 centered = false
 flip_h = true
@@ -58,31 +58,31 @@ flip_v = true
 [node name="Rays" type="Spatial" parent="."]
 
 [node name="RayCast" type="RayCast" parent="Rays"]
-transform = Transform( 0.999979, 0.000127101, 0.00640405, 0, 0.999803, -0.0198431, -0.00640531, 0.0198427, 0.999783, 0, 0, 0 )
+transform = Transform( 0.999232, 0.0042313, 0.0389434, 0, 0.994149, -0.108017, -0.0391726, 0.107934, 0.993386, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -10 )
 
 [node name="RayCast2" type="RayCast" parent="Rays"]
-transform = Transform( 0.999935, -0.000173841, -0.0113954, 0, 0.999884, -0.0152536, 0.0113968, 0.0152526, 0.999819, 0, 0, 0 )
+transform = Transform( 0.997852, -0.00076258, -0.0655032, 0, 0.999932, -0.0116411, 0.0655076, 0.0116161, 0.997784, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
 [node name="RayCast3" type="RayCast" parent="Rays"]
-transform = Transform( 0.999922, -4.95879e-05, 0.0124612, 0, 0.999992, 0.00397934, -0.0124613, -0.00397903, 0.999914, 0, 0, 0 )
+transform = Transform( 0.998556, -0.00128702, 0.0536974, 0, 0.999713, 0.0239611, -0.0537128, -0.0239265, 0.99827, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
 [node name="RayCast4" type="RayCast" parent="Rays"]
-transform = Transform( 0.999996, 2.80243e-05, -0.00279238, 0, 0.99995, 0.0100355, 0.00279252, -0.0100354, 0.999946, 0, 0, 0 )
+transform = Transform( 0.99972, 0.00180018, -0.0235784, 0, 0.997098, 0.0761274, 0.023647, -0.0761061, 0.996819, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
 [node name="RayCast5" type="RayCast" parent="Rays"]
-transform = Transform( 0.99997, -0.000222319, -0.00774599, 0, 0.999588, -0.0286893, 0.00774918, 0.0286884, 0.999558, 0, 0, 0 )
+transform = Transform( 0.999512, -0.0017012, -0.03119, 0, 0.998516, -0.0544622, 0.0312363, 0.0544356, 0.998029, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )
 
 [node name="RayCast6" type="RayCast" parent="Rays"]
-transform = Transform( 0.999953, 0.000110283, 0.00972071, 0, 0.999936, -0.0113444, -0.00972133, 0.0113439, 0.999888, 0, 0, 0 )
+transform = Transform( 0.99941, 0.000389582, 0.0343391, 0, 0.999936, -0.0113444, -0.0343413, 0.0113377, 0.999346, 0, 0, 0 )
 enabled = true
 cast_to = Vector3( 0, 0, -20 )

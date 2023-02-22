@@ -4,13 +4,22 @@
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Enemies/Abbadon.tscn" type="PackedScene" id=3]
 
-[node name="Spatial" type="Spatial"]
+[node name="World" type="Spatial"]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.891989, 0 )
 
 [node name="KinematicBody" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 5.6092 )
+
+[node name="KinematicBody2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 5.6092 )
+
+[node name="KinematicBody3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 5.6092 )
+
+[node name="KinematicBody4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 5.6092 )
 
 [node name="doom" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1.02198, 0 )
