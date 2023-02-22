@@ -10,7 +10,7 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.891989, 0 )
 
 [node name="KinematicBody" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 1.66105, 5.6092 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 5.6092 )
 
 [node name="doom" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1.02198, 0 )

@@ -8,7 +8,7 @@ var path = []
 var pathIndex = 0
 var speed = 10
 var health = 10
-
+var move = true
 
 func _ready():
 	pass
@@ -20,7 +20,8 @@ func _physics_process(delta):
 		if direction.length() < 1:
 			pathIndex += 1
 		else:
-			move_and_slide(direction.normalized() * speed, Vector3.UP)
+			if move:
+				move_and_slide(direction.normalized() * speed, Vector3.UP)
 
 	else:
 		findPath(player.global_transform.origin)
@@ -30,6 +31,13 @@ func takeDamage(amount):
 	health -= amount
 	if health <= 0:
 		death()
+		return
+		
+	move = false
+	$AnimatedSprite3D.play("getDamage")
+	yield ($AnimatedSprite3D, "animation_finished")
+	$AnimatedSprite3D.play("walking")
+	move = true
 
 
 func findPath(target):

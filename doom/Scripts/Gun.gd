@@ -13,6 +13,8 @@ func _ready():
 
 
 func checkHit():
+	print(rays)
+	
 	for ray in rays:
 		if ray.is_colliding():
 			if ray.get_collider().is_in_group("enemy"):
