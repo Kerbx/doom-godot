@@ -21,6 +21,7 @@ func _physics_process(delta):
 			pathIndex += 1
 		else:
 			if move:
+				$AnimatedSprite3D.play("walking")
 				move_and_slide(direction.normalized() * speed, Vector3.UP)
 
 	else:
@@ -32,11 +33,9 @@ func takeDamage(amount):
 	if health <= 0:
 		death()
 		return
-		
 	move = false
 	$AnimatedSprite3D.play("getDamage")
-	yield ($AnimatedSprite3D, "animation_finished")
-	$AnimatedSprite3D.play("walking")
+	yield($AnimatedSprite3D, "animation_finished")
 	move = true
 
 
@@ -53,7 +52,8 @@ func death():
 		$AnimatedSprite3D.play("die")
 	else:
 		$AnimatedSprite3D.play('die')
-
+	
+	return
 
 func shoot(target):
 	pass

@@ -4,7 +4,7 @@ extends Spatial
 onready var sprite = $CanvasLayer/Control/AnimatedSprite
 onready var rays = $Rays.get_children()
 
-var damage = 8
+var damage = 5
 var canShoot = true
 
 
@@ -13,8 +13,6 @@ func _ready():
 
 
 func checkHit():
-	print(rays)
-	
 	for ray in rays:
 		if ray.is_colliding():
 			if ray.get_collider().is_in_group("enemy"):

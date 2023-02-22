@@ -10,6 +10,11 @@ export var health = 100
 var rotationX = 0
 var rotationY = 0
 
+onready var pistol = preload("res://Scenes/Guns/Pistol.tscn")
+onready var shotgun = preload("res://Scenes/Guns/Shotgun.tscn")
+var currentGun = 0
+onready var guns = [pistol, shotgun]
+
 
 func _ready():
 	pass
@@ -17,6 +22,17 @@ func _ready():
 
 func _physics_process(delta):
 	var direction = Vector3()
+
+	if Input.is_action_just_released("nextGun"):
+		currentGun += 1
+		if currentGun > len(guns) - 1:
+			currentGun = 0
+			changeGun(currentGun)
+	elif Input.is_action_just_released("prevGun"):
+		currentGun -= 1
+		if currentGun < 0:
+			currentGun = len(guns) - 1
+			changeGun(currentGun)
 
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
@@ -57,10 +73,6 @@ func _input(e):
 		$Pivot/Camera.transform.basis = Basis(Vector3.RIGHT, rotationX)
 
 
-func shoot():
-	pass
-
-
 func getDamage(damageAmount):
 	pass
 
@@ -70,4 +82,6 @@ func die():
 
 
 func changeGun(gun):
-	pass
+	$Pivot/Camera/Gun.get_child(0).queue_free()
+	var new = guns[gun].instance()
+	$Pivot/Camera/Gun.add_child(new)
