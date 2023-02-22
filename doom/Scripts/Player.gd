@@ -12,8 +12,10 @@ var rotationY = 0
 
 onready var pistol = preload("res://Scenes/Guns/Pistol.tscn")
 onready var shotgun = preload("res://Scenes/Guns/Shotgun.tscn")
+onready var ak47 = preload("res://Scenes/Guns/AK47.tscn")
+
 var currentGun = 0
-onready var guns = [pistol, shotgun]
+onready var guns = [pistol, shotgun, ak47]
 
 
 func _ready():

@@ -25,7 +25,7 @@ func checkHit():
 
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("shoot") and canShoot:
+	if Input.is_action_pressed("shoot") and canShoot:
 		sprite.play("shoot")
 		checkHit()
 		canShoot = false
@@ -34,3 +34,7 @@ func _physics_process(delta):
 
 		canShoot = true
 		sprite.play("idle")
+
+
+func _on_Timer_timeout():
+	canShoot = true
