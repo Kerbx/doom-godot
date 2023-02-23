@@ -49,4 +49,4 @@ flip_v = true
 
 [node name="RayCast" type="RayCast" parent="Rays"]
 enabled = true
-cast_to = Vector3( 0, 0, -20 )
+cast_to = Vector3( 0, 0, -100 )

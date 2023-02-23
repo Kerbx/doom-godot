@@ -25,5 +25,29 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 5.6092 )
 [node name="KinematicBody4" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 5.6092 )
 
+[node name="KinematicBody5" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 10.07 )
+
+[node name="KinematicBody6" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 10.07 )
+
+[node name="KinematicBody7" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 10.07 )
+
+[node name="KinematicBody8" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 10.07 )
+
+[node name="KinematicBody9" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 1.43831 )
+
+[node name="KinematicBody10" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 1.43831 )
+
+[node name="KinematicBody11" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 1.43831 )
+
+[node name="KinematicBody12" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 1.43831 )
+
 [node name="doom" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1.02198, 0 )

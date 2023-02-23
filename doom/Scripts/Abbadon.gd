@@ -24,9 +24,6 @@ func _physics_process(delta):
 				$AnimatedSprite3D.play("walking")
 				move_and_slide(direction.normalized() * speed * delta, Vector3.UP)
 
-	else:
-		findPath(player.global_transform.origin)
-
 
 func takeDamage(amount):
 	health -= amount
@@ -57,3 +54,7 @@ func death():
 
 func shoot(target):
 	pass
+
+
+func _on_Timer_timeout():
+	findPath(player.global_transform.origin)
