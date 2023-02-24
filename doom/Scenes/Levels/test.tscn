@@ -1,53 +1,58 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Levels/doom.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Enemies/Abbadon.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Enemies/Anihilator.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Objects/HUD.tscn" type="PackedScene" id=5]
 
 [node name="World" type="Spatial"]
-
-[node name="Anihilator" parent="." instance=ExtResource( 4 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 22.5392, 3.21209, 1.00887 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.891989, 0 )
 
-[node name="KinematicBody" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 5.6092 )
-
-[node name="KinematicBody2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 5.6092 )
-
-[node name="KinematicBody3" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 5.6092 )
-
-[node name="KinematicBody4" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 5.6092 )
-
-[node name="KinematicBody5" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 10.07 )
-
-[node name="KinematicBody6" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 10.07 )
-
-[node name="KinematicBody7" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 10.07 )
-
-[node name="KinematicBody8" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 10.07 )
-
-[node name="KinematicBody9" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 1.43831 )
-
-[node name="KinematicBody10" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 1.43831 )
-
-[node name="KinematicBody11" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 1.43831 )
-
-[node name="KinematicBody12" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 1.43831 )
+[node name="HUD" parent="Player" instance=ExtResource( 5 )]
 
 [node name="doom" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1.02198, 0 )
+
+[node name="Monsters" type="Spatial" parent="."]
+
+[node name="Anihilator" parent="Monsters" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 22.5392, 3.21209, 1.00887 )
+
+[node name="KinematicBody" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 5.6092 )
+
+[node name="KinematicBody2" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 5.6092 )
+
+[node name="KinematicBody3" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 5.6092 )
+
+[node name="KinematicBody4" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 5.6092 )
+
+[node name="KinematicBody5" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 10.07 )
+
+[node name="KinematicBody6" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 10.07 )
+
+[node name="KinematicBody7" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 10.07 )
+
+[node name="KinematicBody8" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 10.07 )
+
+[node name="KinematicBody9" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8027, 3.1497, 1.43831 )
+
+[node name="KinematicBody10" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01447, 3.1497, 1.43831 )
+
+[node name="KinematicBody11" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.93018, 3.1497, 1.43831 )
+
+[node name="KinematicBody12" parent="Monsters" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51483, 3.1497, 1.43831 )

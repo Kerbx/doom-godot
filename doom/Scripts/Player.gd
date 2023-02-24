@@ -19,7 +19,7 @@ onready var guns = [pistol, shotgun, ak47]
 
 
 func _ready():
-	pass
+	changeGun(0)
 
 
 func _physics_process(delta):
@@ -88,3 +88,5 @@ func changeGun(gun):
 	$Pivot/Camera/Gun.get_child(0).queue_free()
 	var new = guns[gun].instance()
 	$Pivot/Camera/Gun.add_child(new)
+	Global.curGun = new.name
+

@@ -25,10 +25,10 @@ func checkHit():
 
 
 func _physics_process(delta):
-	if Input.is_action_pressed("shoot") and canShoot and Global.ammoPistol > 0:
+	if Input.is_action_pressed("shoot") and canShoot and Global.ammoShells > 0:
 		sprite.play("shoot")
 		checkHit()
-		Global.ammoPistol -= 1
+		Global.ammoShells -= 2
 		canShoot = false
 
 		yield (sprite, "animation_finished")

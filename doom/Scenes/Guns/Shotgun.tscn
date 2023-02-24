@@ -5,7 +5,7 @@
 [ext_resource path="res://Textures/Guns/Bearkiller/SPRITES/kfdbc0.png" type="Texture" id=3]
 [ext_resource path="res://Textures/Guns/Bearkiller/SPRITES/kfdba0.png" type="Texture" id=4]
 [ext_resource path="res://Textures/Guns/Bearkiller/SPRITES/kfdbp0.png" type="Texture" id=5]
-[ext_resource path="res://Scripts/Gun.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Shotgun.gd" type="Script" id=6]
 [ext_resource path="res://Textures/Guns/Bearkiller/SPRITES/kfdbs0.png" type="Texture" id=7]
 [ext_resource path="res://Textures/Guns/Bearkiller/SPRITES/kfdbo0.png" type="Texture" id=8]
 [ext_resource path="res://Textures/Guns/Bearkiller/SPRITES/kfdbf0.png" type="Texture" id=9]
@@ -49,6 +49,7 @@ rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "shoot"
+frame = 2
 playing = true
 centered = false
 flip_h = true
