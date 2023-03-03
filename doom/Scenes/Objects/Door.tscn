@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Maps/textures/cage_patches/d2_door1.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Door.gd" type="Script" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 3, 2, 3 )
+uv2_scale = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( -42.3554, 36.4454, 116.099 ), Vector3( 7.91853, 36.4454, 116.099 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 7.26277, 36.4454, 116.099 ), Vector3( -42.3554, 36.4454, 116.099 ) ]
+}
+
+[sub_resource type="ConcavePolygonShape" id=5]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[node name="Door" type="MeshInstance"]
+transform = Transform( 25, 0, 0, 0, 30, 0, 0, 0, 3, 7.26277, 36.4454, 116.099 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="DoorAnimation" type="AnimationPlayer" parent="."]
+anims/close = SubResource( 3 )
+anims/open = SubResource( 4 )
+
+[node name="StaticBody" type="StaticBody" parent="." groups=["door"]]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 5 )

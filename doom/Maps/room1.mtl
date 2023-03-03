@@ -1,0 +1,9 @@
+newmtl cage_flats/d2_flat1
+map_Kd textures\cage_flats\d2_flat1.png
+
+newmtl cage_flats/d2_flat2
+map_Kd textures\cage_flats\d2_flat2.png
+
+newmtl cage_patches/d2_wall1
+map_Kd textures\cage_patches\d2_wall1.png
+

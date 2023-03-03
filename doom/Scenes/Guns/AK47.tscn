@@ -33,11 +33,12 @@ margin_left = -40.0
 margin_top = -40.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
-position = Vector2( -367, 41 )
+position = Vector2( -418, 44 )
 rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "shoot"
+frame = 2
 playing = true
 centered = false
 flip_h = true

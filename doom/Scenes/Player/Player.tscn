@@ -22,3 +22,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.17303, -0.179539 )
 [node name="Gun" type="Spatial" parent="Pivot/Camera"]
 
 [node name="AK47" parent="Pivot/Camera/Gun" instance=ExtResource( 2 )]
+
+[node name="RayCast" type="RayCast" parent="Pivot/Camera"]
+enabled = true
+cast_to = Vector3( 0, 0, -5 )

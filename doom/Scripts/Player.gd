@@ -13,6 +13,7 @@ var rotationY = 0
 onready var pistol = preload("res://Scenes/Guns/Pistol.tscn")
 onready var shotgun = preload("res://Scenes/Guns/Shotgun.tscn")
 onready var ak47 = preload("res://Scenes/Guns/AK47.tscn")
+onready var collider = $Pivot/Camera/RayCast
 
 var currentGun = 0
 onready var guns = [pistol, shotgun, ak47]
@@ -32,10 +33,14 @@ func _physics_process(delta):
 		changeGun(currentGun)
 	elif Input.is_action_just_released("nextGun"):
 		currentGun -= 1
-		print(currentGun)
 		if currentGun < 0:
 			currentGun = len(guns) - 1
 		changeGun(currentGun)
+	if Input.is_action_just_pressed("interact"):
+		if collider.is_colliding():
+			if collider.get_collider().is_in_group("door"):
+				if not collider.get_collider().get_parent().opened:
+					collider.get_collider().get_parent().call("open")
 
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
