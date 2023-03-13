@@ -1,0 +1,30 @@
+newmtl cage_flats/d2_flat3
+map_Kd textures\cage_flats\d2_flat3.png
+
+newmtl cage_flats/d2_flat4
+map_Kd textures\cage_flats\d2_flat4.png
+
+newmtl cage_flats/d2_flat5
+map_Kd textures\cage_flats\d2_flat5.png
+
+newmtl cage_patches/d2_wall0
+map_Kd textures\cage_patches\d2_wall0.png
+
+newmtl cage_patches/d2_wall3
+map_Kd textures\cage_patches\d2_wall3.png
+
+newmtl cage_patches/d2_wall4
+map_Kd textures\cage_patches\d2_wall4.png
+
+newmtl cage_patches/d2_wall5
+map_Kd textures\cage_patches\d2_wall5.png
+
+newmtl cage_patches/d2_wall6
+map_Kd textures\cage_patches\d2_wall6.png
+
+newmtl cage_patches/d2_wall7
+map_Kd textures\cage_patches\d2_wall7.png
+
+newmtl cage_patches/d2_wall8
+map_Kd textures\cage_patches\d2_wall8.png
+
