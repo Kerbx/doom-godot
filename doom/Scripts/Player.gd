@@ -39,6 +39,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("interact"):
 		if collider.is_colliding():
 			if collider.get_collider().is_in_group("door"):
+				print(collider.get_collider().get_parent().translation)
 				if not collider.get_collider().get_parent().opened:
 					collider.get_collider().get_parent().call("open")
 

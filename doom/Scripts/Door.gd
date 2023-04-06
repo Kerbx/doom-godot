@@ -10,6 +10,7 @@ func open():
 	anim.play("open")
 	yield(get_tree().create_timer(1.0), "timeout")
 	yield(get_tree().create_timer(2.0), "timeout")
+	print(self.translation)
 	anim.play("close")
 	yield(get_tree().create_timer(1.0), "timeout")
 	anim.stop()
